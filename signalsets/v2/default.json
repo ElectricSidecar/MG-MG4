@@ -1,0 +1,7 @@
+{ "commands": [
+{ "hdr": "7DF", "rax": "7ED", "cmd": {"22": "B046"}, "freq": 1,
+  "signals": [
+    {"id": "MG4_HVBAT_SOC", "path": "Battery", "fmt": { "len": 16, "max": 100, "mul": 0.1, "unit": "percent" }, "name": "HV battery charge", "suggestedMetric": "stateOfCharge", "description": "HV battery charge"}
+  ]}
+]
+}
