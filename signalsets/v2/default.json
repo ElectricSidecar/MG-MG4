@@ -29,11 +29,11 @@
   ]},
 { "hdr": "7DF", "rax": "7E4", "cmd": { "22": "B001" }, "freq": 180, 
   "signals": [
-    { "id": "MG4_EVCC_CURRENT", "path": "Battery.EVCC", "fmt": { "len": 16, "add": -2048, "mul": 0.00025, "unit": "milliamps" }, "name": "Current" }
+    { "id": "MG4_EVCC_CURRENT", "path": "Battery.EVCC", "fmt": { "len": 16, "add": -2048, "mul": 0.25, "unit": "milliamps" }, "name": "Current" }
   ]},
 { "hdr": "7DF", "rax": "7E4", "cmd": { "22": "B003" }, "freq": 180,
   "signals": [
-    { "id": "MG4_EVCC_MAX_CURRENT", "path": "Battery.EVCC", "fmt": { "len": 8,  "mul": 0.00043478260869, "unit": "milliamps" }, "name": "Max Current" }
+    { "id": "MG4_EVCC_MAX_CURRENT", "path": "Battery.EVCC", "fmt": { "len": 8,  "mul": 0.43478260869, "unit": "milliamps" }, "name": "Max Current" }
   ]},
 { "hdr": "710", "rax": "710", "cmd": { "22": "B921" }, "freq": 180,
   "signals": [
