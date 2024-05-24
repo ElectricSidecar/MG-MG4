@@ -23,6 +23,14 @@
   "signals": [
     { "id": "MG4_HVBAT_CHARGING", "path": "Battery", "fmt": { "bix": 7, "len": 1, "max": 1, "unit": "scalar" }, "name": "HV battery is charging?" }
   ]},
+{ "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B056" }, "freq": 60,
+  "signals": [
+    { "id": "MG4_HVBAT_TEMP", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 0.5, "add": -40, "unit": "celsius" }, "name": "HV battery temperature" }
+  ]},
+{ "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B05C" }, "freq": 60,
+  "signals": [
+    { "id": "MG4_HVBAT_COOLANT_TEMP", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 0.5, "add": -40, "unit": "celsius" }, "name": "HV battery coolant temperature" }
+  ]},
 { "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B061" }, "freq": 30, 
   "signals": [
     { "id": "MG4_HVBAT_SOH", "path": "Battery", "fmt": { "len": 16, "max": 100, "mul": 0.01, "unit": "percent" }, "name": "HV battery health", "suggestedMetric": "stateOfHealth" }
