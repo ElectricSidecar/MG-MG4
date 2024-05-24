@@ -17,27 +17,27 @@
   ]},
 { "hdr": "710", "rax": "710", "cmd": { "22": "D001" }, "freq": 4, 
   "signals": [
-    { "id": "MG4_GWM_STATUS", "path": "Vehicle/Internal", "fmt": { "len": 8, "unit": "scalar" }, "name": "Vehicle Status" }
+    { "id": "MG4_GWM_STATUS", "path": "Vehicle/Internal", "fmt": { "len": 8, "unit": "scalar", "max": 255 }, "name": "Vehicle Status" }
   ]},
 { "hdr": "7DF", "rax": "7E4", "cmd": { "22": "B00F" }, "freq": 4,
   "signals": [
-    { "id": "MG4_EVCC_CHARGING", "path": "Battery.EVCC", "fmt": { "len": 8, "unit": "scalar" }, "name": "Charging" }
+    { "id": "MG4_EVCC_CHARGING", "path": "Battery.EVCC", "fmt": { "len": 8, "unit": "scalar", "max": 255 }, "name": "Charging" }
   ]},
 { "hdr": "7DF", "rax": "7E4", "cmd": { "22": "B010" }, "freq": 4, 
   "signals": [ 
-    { "id": "MG4_EVCC_VOLTAGE", "path": "Battery.EVCC", "fmt": { "len": 16, "sign": false, "mul": 0.01030927835, "unit": "volts" }, "name": "Voltage" }
+    { "id": "MG4_EVCC_VOLTAGE", "path": "Battery.EVCC", "fmt": { "len": 16, "sign": false, "mul": 0.01030927835, "unit": "volts", "max": 25000 }, "name": "Voltage" }
   ]},
 { "hdr": "7DF", "rax": "7E4", "cmd": { "22": "B001" }, "freq": 180, 
   "signals": [
-    { "id": "MG4_EVCC_CURRENT", "path": "Battery.EVCC", "fmt": { "len": 16, "add": -2048, "mul": 250, "unit": "milliamps" }, "name": "Current" }
+    { "id": "MG4_EVCC_CURRENT", "path": "Battery.EVCC", "fmt": { "len": 16, "add": -2048, "mul": 250, "unit": "milliamps", "max": 250000 }, "name": "Current" }
   ]},
 { "hdr": "7DF", "rax": "7E4", "cmd": { "22": "B003" }, "freq": 180,
   "signals": [
-    { "id": "MG4_EVCC_MAX_CURRENT", "path": "Battery.EVCC", "fmt": { "len": 8,  "mul": 434.78260869, "unit": "milliamps" }, "name": "Max Current" }
+    { "id": "MG4_EVCC_MAX_CURRENT", "path": "Battery.EVCC", "fmt": { "len": 8,  "mul": 434.78260869, "unit": "milliamps", "max": 250000 }, "name": "Max Current" }
   ]},
 { "hdr": "710", "rax": "710", "cmd": { "22": "B921" }, "freq": 180,
   "signals": [
-    { "id": "MG4_GWM_ODO", "path": "Trips", "fmt": { "len": 32, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer" }
+    { "id": "MG4_GWM_ODO", "path": "Trips", "fmt": { "len": 32, "unit": "kilometers", "max": 4294967295 }, "name": "Odometer", "suggestedMetric": "odometer" }
   ]}
 ]
 }
