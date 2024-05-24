@@ -1,4 +1,16 @@
 { "commands": [
+{ "hdr": "7DF", "rax": "7EB", "cmd": { "22": "BA00" }, "freq": 0.25,
+  "signals": [
+    { "id": "MG4_VSS", "path": "Movement", "fmt": { "len": 16, "max": 250, "add": -200, "mul": 0.01, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed." }
+  ]},
+{ "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B048" }, "freq": 1,
+  "signals": [
+    { "id": "MG4_HVBAT_CHARGING", "path": "Battery", "fmt": { "bix": 7, "len": 1, "max": 1, "unit": "scalar" }, "name": "HV battery is charging?" }
+  ]},
+{ "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B061" }, "freq": 30, 
+  "signals": [
+    { "id": "MG4_HVBAT_SOH", "path": "Battery", "fmt": { "len": 16, "max": 100, "mul": 0.01, "unit": "percent" }, "name": "HV battery health", "suggestedMetric": "stateOfHealth" }
+  ]},
 { "hdr": "710", "rax": "710", "cmd": { "22": "D001" }, "freq": 4, 
   "signals": [
     { "id": "MG4_GWM_STATUS", "path": "Vehicle/Internal", "fmt": { "len": 8, "unit": "scalar" }, "name": "Vehicle Status" }
@@ -23,21 +35,9 @@
   "signals": [
     { "id": "MG4_GWM_ODO", "path": "Trips", "fmt": { "len": 32, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer" }
   ]},
-{ "hdr": "7DF", "rax": "7EB", "cmd": { "22": "BA00" }, "freq": 0.25,
-  "signals": [
-    { "id": "MG4_VSS", "path": "Movement", "fmt": { "len": 16, "max": 250, "add": -200, "mul": 0.01, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed." }
-  ]},
 { "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B046" }, "freq": 30,
   "signals": [
     { "id": "MG4_HVBAT_RAW_SOC", "path": "Battery/Internal", "fmt": { "len": 16, "max": 100, "mul": 0.1, "unit": "percent" }, "name": "HV battery raw charge", "suggestedMetric": "stateOfCharge", "description": "HV battery raw charge" }
-  ]}, 
-{ "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B048" }, "freq": 1,
-  "signals": [
-    { "id": "MG4_HVBAT_CHARGING", "path": "Battery", "fmt": { "bix": 7, "len": 1, "max": 1, "unit": "scalar" }, "name": "HV battery is charging?" }
-  ]},
-{ "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B061" }, "freq": 30, 
-  "signals": [
-    { "id": "MG4_HVBAT_SOH", "path": "Battery", "fmt": { "len": 16, "max": 100, "mul": 0.01, "unit": "percent" }, "name": "HV battery health", "suggestedMetric": "stateOfHealth" }
   ]}
 ]
 }
