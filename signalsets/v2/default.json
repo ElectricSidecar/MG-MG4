@@ -5,11 +5,11 @@
   ]},
 { "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B041" }, "freq": 30,
   "signals": [
-    { "id": "MG4_HVBAT_BUS_VOLTAGE", "path": "Battery.Internal", "fmt": { "len": 16, "max": 1000, "unit": "volts" }, "name": "HV battery bus voltage" }
+    { "id": "MG4_HVBAT_BUS_VOLTAGE", "path": "Battery.Internal", "fmt": { "len": 16, "max": 1000, "mul": 0.25, "unit": "volts" }, "name": "HV battery bus voltage" }
   ]},
 { "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B042" }, "freq": 30,
   "signals": [
-    { "id": "MG4_HVBAT_VOLTAGE", "path": "Battery", "fmt": { "len": 16, "max": 500, "unit": "volts" }, "name": "HV battery voltage" }
+    { "id": "MG4_HVBAT_VOLTAGE", "path": "Battery", "fmt": { "len": 16, "max": 500, "mul": 0.25, "unit": "volts" }, "name": "HV battery voltage" }
   ]},
 { "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B043" }, "freq": 30,
   "signals": [
