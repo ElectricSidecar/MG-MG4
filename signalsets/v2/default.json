@@ -2,7 +2,7 @@
 { "hdr": "7DF", "rax": "7EB", "cmd": { "22": "BA00" }, "freq": 0.25,
   "signals": [
     { "id": "MG4_VSS", "path": "Movement", "fmt": { "len": 16, "max": 250, "add": -200, "mul": 0.01, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed." }
-  ]},
+]},
 { "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B041" }, "freq": 30,
   "signals": [
     { "id": "MG4_HVBAT_BUS_VOLTAGE", "path": "Battery.Internal", "fmt": { "len": 16, "max": 1000, "mul": 0.25, "unit": "volts" }, "name": "HV battery bus voltage" }
@@ -13,11 +13,11 @@
   ]},
 { "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B043" }, "freq": 30,
   "signals": [
-    { "id": "MG4_HVBAT_CURRENT", "path": "Battery", "fmt": { "len": 16, "max": 250000, "add": -100000, "mul": 25, "unit": "milliamps" }, "name": "HV battery current" }
+    { "id": "MG4_HVBAT_CURRENT", "path": "Battery", "fmt": { "len": 16, "max": 250, "add": -1000, "mul": 0.025, "unit": "amps" }, "name": "HV battery current" }
   ]},
 { "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B046" }, "freq": 30,
   "signals": [
-    { "id": "MG4_HVBAT_RAW_SOC", "path": "Battery.Internal", "fmt": { "len": 16, "max": 100, "mul": 0.1, "unit": "percent" }, "name": "HV battery raw charge", "suggestedMetric": "stateOfCharge", "description": "HV battery raw charge" }
+    { "id": "MG4_HVBAT_RAW_SOC", "path": "Battery.Internal", "fmt": { "len": 16, "max": 100, "mul": 0.1, "unit": "percent" }, "name": "HV battery raw charge",  "description": "HV battery raw charge" }
   ]},
 { "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B048" }, "freq": 1,
   "signals": [
@@ -50,11 +50,11 @@
   ]},
 { "hdr": "7DF", "rax": "7EC", "cmd": { "22": "B001" }, "freq": 180, 
   "signals": [
-    { "id": "MG4_EVCC_CURRENT", "path": "Battery.EVCC", "fmt": { "len": 16, "add": -409600, "mul": 200, "unit": "milliamps", "max": 250000 }, "name": "Current" }
+    { "id": "MG4_EVCC_CURRENT", "path": "Battery.EVCC", "fmt": { "len": 16, "add": -409.6, "mul": 0.2, "unit": "amps", "max": 250 }, "name": "Current" }
   ]},
 { "hdr": "7DF", "rax": "7EC", "cmd": { "22": "B003" }, "freq": 180,
   "signals": [
-    { "id": "MG4_EVCC_MAX_CURRENT", "path": "Battery.EVCC", "fmt": { "len": 8,  "mul": 434.78260869, "unit": "milliamps", "max": 250000 }, "name": "Max Current" }
+    { "id": "MG4_EVCC_MAX_CURRENT", "path": "Battery.EVCC", "fmt": { "len": 8,  "mul": 0.434782609, "unit": "amps", "max": 250 }, "name": "Max Current" }
   ]},
 { "hdr": "710", "rax": "718", "cmd": { "22": "B921" }, "freq": 180,
   "signals": [
