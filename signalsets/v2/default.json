@@ -5,7 +5,15 @@
   ]},
 { "hdr": "7DF", "rax": "7ED", "cmd": { "01": "0C" }, "freq": 0.25,
   "signals": [
-    { "id": "MG4_VSS", "path": "Movement", "fmt": { "len": 16, "max": 250, "add": -200, "mul": 0.01, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed." }
+    { "id": "MG4_RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383.75, "mul": 0.25, "unit": "rpm" }, "name": "Engine RPM" }
+  ]},
+{ "hdr": "7DF", "rax": "7ED", "cmd": { "01": "46" }, "freq": 0.25,
+  "signals": [
+  { "id": "MG4_AAT", "path": "Climate", "fmt": { "len": 8, "min": -40, "max": 215, "add": -40, "unit": "celsius" }, "name": "Ambient air temperature" }
+]},
+{ "hdr": "7DF", "rax": "7ED", "cmd": { "01": "5B" }, "freq": 1,
+  "signals": [
+  { "id": "MG4_SOC", "path": "Battery", "fmt": { "len": 8, "min": 0, "max": 100, "mul": 0.3921568627, "unit": "percent" }, "name": "State of charge", "suggestedMetric": "stateOfCharge" }
 ]},
 { "hdr": "7DF", "rax": "7ED", "cmd": { "22": "B041" }, "freq": 30,
   "signals": [
