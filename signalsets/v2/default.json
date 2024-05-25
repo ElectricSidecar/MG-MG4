@@ -1,5 +1,9 @@
 { "commands": [
-{ "hdr": "7DF", "rax": "7EB", "cmd": { "22": "BA00" }, "freq": 0.25,
+{ "hdr": "7DF", "rax": "7ED", "cmd": { "01": "0D" }, "freq": 0.25,
+  "signals": [
+    { "id": "MG4_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed." }
+  ]},
+{ "hdr": "7DF", "rax": "7ED", "cmd": { "01": "0C" }, "freq": 0.25,
   "signals": [
     { "id": "MG4_VSS", "path": "Movement", "fmt": { "len": 16, "max": 250, "add": -200, "mul": 0.01, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed." }
 ]},
