@@ -242,9 +242,9 @@
   ]}
 ],
 "signalGroups": [
-  {"id": "MG4_HVBAT_CMU_MINVOLT", "path": "Battery.Modules.MinVolts", "matchingRegex": "MG4_HVBAT_(CMU\\d+)_MINVOLT", "name": "HV battery pack min voltage"},
-  {"id": "MG4_HVBAT_CMU_MAXVOLT", "path": "Battery.Modules.MaxVolts", "matchingRegex": "MG4_HVBAT_(CMU\\d+)_MAXVOLT", "name": "HV battery pack max voltage"},
-  {"id": "MG4_HVBAT_CMU_MINTEMP", "path": "Battery.Modules.MinTemp",  "matchingRegex": "MG4_HVBAT_(CMU\\d+)_MINTEMP", "name": "HV battery pack min temperature"},
-  {"id": "MG4_HVBAT_CMU_MAXTEMP", "path": "Battery.Modules.MaxTemp",  "matchingRegex": "MG4_HVBAT_(CMU\\d+)_MAXTEMP", "name": "HV battery pack max temperature"}
+  {"id": "MG4_HVBAT_CMU_MINVOLT", "path": "Battery.Modules", "matchingRegex": "MG4_HVBAT_(CMU\\d+)_MINVOLT", "name": "HV battery pack min voltage"},
+  {"id": "MG4_HVBAT_CMU_MAXVOLT", "path": "Battery.Modules", "matchingRegex": "MG4_HVBAT_(CMU\\d+)_MAXVOLT", "name": "HV battery pack max voltage"},
+  {"id": "MG4_HVBAT_CMU_MINTEMP", "path": "Battery.Modules",  "matchingRegex": "MG4_HVBAT_(CMU\\d+)_MINTEMP", "name": "HV battery pack min temperature"},
+  {"id": "MG4_HVBAT_CMU_MAXTEMP", "path": "Battery.Modules",  "matchingRegex": "MG4_HVBAT_(CMU\\d+)_MAXTEMP", "name": "HV battery pack max temperature"}
 ]
 }
